@@ -102,8 +102,8 @@
    .hero__inform {
       padding-left: 2rem;
    }
-   .box-img {
-      gap: 4rem;
+   .brand-img {
+      width: 70%;
    }
    .banner {
       height: 100%;
@@ -176,6 +176,15 @@
 
    .contact__list .footer__item span i {
       font-size: 3rem;
+   }
+
+   .blog__body {
+      grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+      grid-template-rows: repeat(3, 1fr);
+   }
+   .blog-box {
+      grid-column: unset;
+      grid-row: unset;
    }
 }
 
