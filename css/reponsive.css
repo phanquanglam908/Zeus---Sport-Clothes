@@ -62,15 +62,13 @@
    }
 
    /* ========== banner ========== */
-   .banner-video iframe {
-      width: 330px;
-      height: 250px;
-   }
+
    .banner-news__title {
       font-size: 10rem;
    }
 
    /* ========== Subscribe ========== */
+
    .newletters__subtitle {
       margin-top: 3rem;
    }
@@ -78,6 +76,17 @@
    .testimonials-list {
       display: flex;
       flex-wrap: unset;
+   }
+
+   /* ========== Blog ========== */
+   .blog__wrapper {
+      grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+   }
+   /* ========== footer ========== */
+   .about__desc {
+      font-size: 1.8rem;
+      line-height: 2rem;
+      width: 100%;
    }
 }
 
@@ -90,6 +99,16 @@
       width: 100%;
       font-size: 2.3rem;
    }
+   .new-release__tags {
+      width: 100%;
+      padding: 0 1rem;
+   }
+
+   .tag__name {
+      width: 12rem;
+      height: 4rem;
+   }
+
    .inform__desc {
       width: 80%;
    }
@@ -104,6 +123,10 @@
    }
    .brand-img {
       width: 70%;
+   }
+
+   .new-releases {
+      padding: 0 2rem;
    }
    .banner {
       height: 100%;
@@ -131,11 +154,15 @@
 
    .newletters {
       padding: 5rem 2rem;
-      height: 100%;
    }
    .newletters__btn {
       padding: 0 5rem;
    }
+
+   .blog {
+      padding: 0 2rem;
+   }
+
    .testimonials {
       padding: 0 2rem;
    }
@@ -178,13 +205,18 @@
       font-size: 3rem;
    }
 
-   .blog__body {
+   .blog__wrapper {
       grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
       grid-template-rows: repeat(3, 1fr);
    }
    .blog-box {
       grid-column: unset;
       grid-row: unset;
+   }
+   /* ========== footer ========== */
+   .about__desc {
+      font-size: 2.4rem;
+      line-height: 3rem;
    }
 }
 
