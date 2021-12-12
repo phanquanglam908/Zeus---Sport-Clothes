@@ -1,11 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+@font-face {
+   font-family: Built Titling;
+   src: url(../font/built_titling/built_titling_lt.ttf);
+   src: url(../font/built_titling/built_titling_rg.ttf);
+   src: url(../font/built_titling/built_titling_sb.ttf);
+   src: url(../font/built_titling/built_titling_bd.ttf);
+}
 :root {
    --white: #ffffff;
    --black: #0c0e07;
    --red: #de2424;
    --red-hover: #911b1b;
 
-   --title-font: "Built Titling", sans-serif;
+   --title-font: Built Titling, sans-serif;
    --body-font: "Ubuntu", sans-serif;
 }
 
