@@ -1,4 +1,4 @@
-/* ========== Tablet ========== */
+/* ================================================Tablet ========== */
 @media screen and (max-width: 1023px) {
    /* ========== Base ========== */
    html {
@@ -82,6 +82,14 @@
    .blog__wrapper {
       grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
    }
+
+   .product-box {
+      margin-bottom: 10rem;
+   }
+   .product-row {
+      margin: 0;
+   }
+
    /* ========== footer ========== */
    .about__desc {
       font-size: 1.8rem;
@@ -90,7 +98,7 @@
    }
 }
 
-/* =========== Mobile ==========  */
+/* =========================================================== Mobile ==========  */
 @media screen and (max-width: 767px) {
    html {
       font-size: 40%;
@@ -232,6 +240,43 @@
       grid-column: unset;
       grid-row: unset;
    }
+
+   /* ========== Page-state ========= */
+   .page-state {
+      padding: 0 2rem;
+   }
+
+   .page-state__link {
+      font-size: 2.4rem;
+   }
+
+   /* ========== Hot sale ========== */
+   .hot-sale {
+      padding: 0 2rem;
+   }
+
+   /* ========== Product-page Section ========= */
+   .product-section {
+      padding: 0 2rem;
+   }
+   .sort-by__title {
+      font-size: 2.4rem;
+   }
+   .sort-by__selection {
+      font-size: 2rem;
+   }
+   .product-row {
+      margin: 0;
+   }
+
+   /* ========== Pagination ========== */
+   .pagination__item {
+      font-size: 2.5rem;
+   }
+   .pagination__item i {
+      font-size: 3rem;
+   }
+
    /* ========== footer ========== */
    .about__desc {
       font-size: 2.4rem;
@@ -245,5 +290,8 @@
    }
    .inform__desc {
       width: 100%;
+   }
+   .brand-name__link {
+      font-size: 3rem;
    }
 }

@@ -1,0 +1,238 @@
+/* ========= Banner 1 ========== */
+.product-banner-1 {
+   margin-top: 12rem;
+   background: url(../img/banner-product-1.jpg);
+   background-size: contain;
+   background-position: center;
+   background-repeat: no-repeat;
+   width: 100%;
+   height: 40rem;
+   margin-bottom: 3rem;
+}
+
+/* ========== Page state ========= */
+.page-state {
+   margin-bottom: 10rem;
+}
+
+.page-state__link {
+   color: var(--black);
+   font-size: 1.6rem;
+   margin-right: 1rem;
+}
+
+.page-state__list span {
+   margin-right: 1rem;
+   font-size: 1.6rem;
+}
+
+/* ========== Categories ========== */
+.categories__title {
+   font-size: 3rem;
+   font-weight: 600;
+   text-transform: uppercase;
+   padding-bottom: 1rem;
+   border-bottom: 2px solid var(--black);
+   margin-bottom: 1rem;
+}
+.brand__name {
+   font-size: 2.5rem;
+   font-weight: 400;
+   margin-bottom: 1rem;
+   padding-left: 2rem;
+}
+
+.brand__list {
+   padding-left: 4rem;
+}
+.brand__item {
+   margin-bottom: 1rem;
+}
+
+.brand__link {
+   font-size: 2rem;
+   font-weight: 300;
+   color: var(--black);
+}
+
+/* ========= Fileter by Price ========= */
+.filter-price {
+   margin-top: 6rem;
+}
+.filter-price__name {
+   font-size: 3rem;
+   font-weight: 600;
+   text-transform: uppercase;
+   padding-bottom: 1rem;
+   border-bottom: 2px solid var(--black);
+   margin-bottom: 1rem;
+}
+
+.filter-price__box input {
+   display: inline-block;
+   padding: 0.75rem 0;
+   outline: none;
+   width: 11rem;
+}
+.filter-price__box span {
+   width: 3rem;
+   height: 1px;
+   background-color: var(--black);
+}
+
+.input-box {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 2rem;
+}
+
+.filter-price__btn {
+   padding: 1rem 0;
+   width: 100%;
+   cursor: pointer;
+   background-color: var(--black);
+   color: var(--white);
+   border-radius: 2px;
+   font-size: 1.6rem;
+   font-weight: 400;
+}
+
+/* ========== Sort By ========== */
+.sort-by {
+   padding-bottom: 1rem;
+   border-bottom: 2px solid var(--black);
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 3rem;
+}
+.sort-by__title {
+   font-size: 1.6rem;
+   font-weight: 400;
+   margin-right: 3rem;
+}
+
+.sort-by__selection {
+   padding: 0.5rem;
+   width: 20rem;
+   outline: none;
+   border: 1px solid var(--black);
+   font-size: 1.6rem;
+   background: none;
+}
+
+.filter-mobile {
+   background: none;
+   border: 2px solid var(--black);
+   border-radius: 1rem;
+   padding: 1rem 3rem;
+   font-size: 1.8rem;
+   letter-spacing: 1px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+}
+
+.filter-mobile:hover {
+   background: var(--black);
+   color: var(--white);
+}
+
+.product-title {
+   text-align: center;
+   font-size: 10rem;
+   font-family: var(--title-font);
+   letter-spacing: 5px;
+   position: relative;
+   width: 100%;
+   height: 5rem;
+}
+
+.product-title::after {
+   content: "";
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 40rem;
+   height: 4px;
+   background-color: var(--black);
+   z-index: 1;
+}
+.product-title::before {
+   content: "SHIRT";
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 20rem;
+   height: 10rem;
+   background-color: white;
+   z-index: 2;
+}
+
+.product-box-wrapper {
+   margin-top: 5rem;
+}
+.product-row {
+   margin-bottom: 10rem;
+}
+
+/* ========= Pagination ==========  */
+.pagination {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 4rem 0;
+}
+.pagination .pagination__list {
+   gap: 1.5rem;
+   display: flex;
+}
+
+.pagination__item {
+   line-height: 4rem;
+   text-align: center;
+   font-size: 1.4rem;
+   cursor: pointer;
+   transition: all 0.3s ease;
+}
+
+.pagination__item span {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.pagination__item i {
+   font-size: 1.6rem;
+}
+.pagination__item--numb {
+   height: 4rem;
+   width: 4rem;
+   border-radius: 50%;
+}
+
+.pagination-btn {
+   padding: 0 2rem;
+}
+
+.btn-prev {
+   border-radius: 25px 5px 5px 25px;
+}
+.btn-next {
+   border-radius: 5px 25px 25px 5px;
+}
+
+.pagination__item--dots {
+   font-size: 2rem;
+   cursor: default;
+}
+
+.pagination-active,
+.pagination__item--numb:hover,
+.pagination-btn:hover {
+   background: var(--black);
+   color: var(--white);
+}
