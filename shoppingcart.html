@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Zues - Shopping Cart</title>
+   <!-- CSS -->
+   <link rel="stylesheet" href="./css/reset.css">
+   <link rel="stylesheet" href="./css/grid.css">
+   <link rel="stylesheet" href="./css/main.css">
+   <link rel="stylesheet" href="./css/shoppingcart.css">
+   <link rel="stylesheet" href="./css/reponsive.css">
+
+   <!-- icon -->
+   <link href='https://unpkg.com/boxicons@2.1.0/css/boxicons.min.css' rel='stylesheet'>
+   <link rel="icon" href="./img/logo tab bar.png">
+</head>
+
+<body>
+   <header class="header">
+      <div class="grid wide">
+         <div class="navbar">
+            <div class="navbar__logo">
+               <a href="index.html" class="logo-link">
+                  <img src="./img/logo for web.png" alt="" class="logo__img">
+               </a>
+            </div>
+
+            <input type="checkbox" hidden id="menu-control" class="menu-control">
+            <div class="navbar__navigation">
+               <ul class="navigation">
+                  <label for="menu-control" class="cancel-icon">
+                     <i class='bx bx-x'></i>
+                  </label>
+                  <li class="navigation__item "><a href="index.html" class="navigation__link">HOME</a></li>
+                  <li class="navigation__item"><a href="product.html" class="navigation__link">PRODUCT</a>
+                  </li>
+                  <li class="navigation__item"><a href="hotsale.html" class="navigation__link">HOT SALE</a>
+                  </li>
+                  <li class="navigation__item"><a href="about.html" class="navigation__link">ABOUT US</a>
+                  </li>
+                  <li class="navigation__item"><a href="blog.html" class="navigation__link">BLOG</a></li>
+                  <li class="navigation__item menu-mobile"><a href="#" class="navigation__link"><i
+                           class='bx bx-search'></i></a></li>
+                  <li class="navigation__item menu-mobile"><a href="login.html" class="navigation__link"><i
+                           class='bx bx-user'></i></a></li>
+                  <li class="navigation__item menu-mobile"><a href="shoppingcart.html" class="navigation__link"><i
+                           class='bx bx-cart'></i></a></li>
+               </ul>
+            </div>
+
+            <div class="navbar__service">
+               <a href="#" class="service__search">
+                  <i class='bx bx-search'></i>
+               </a>
+               <a href="./login.html" class="service__user">
+                  <i class='bx bx-user'></i>
+               </a>
+               <a href="./shoppingcart.html" class="service__cart">
+                  <i class='bx bx-cart'></i>
+               </a>
+            </div>
+
+            <label for="menu-control" class="navbar__menu-toggle">
+               <i class='bx bx-menu'></i>
+            </label>
+            <label for="menu-control" class="overplay-bg"></label>
+         </div>
+      </div>
+   </header>
+
+   <div class="small-container cart-page">
+      <table class="table-product">
+         <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+         </tr>
+
+         <tr>
+            <td>
+               <div class="cart-info">
+                  <img src="../Asset/img/nike-shoes-blue.png">
+                  <div class="cart-info__information">
+                     <p>Nike Free Basketball</p>
+                     <small>Price:$500.00</small>
+                     <br>
+                     <a href="">remove</a>
+                  </div>
+               </div>
+            </td>
+            <td>
+               <div class="table-proudct__input"><input type="number" value="1" min="0"></div>
+            </td>
+            <td>$500.000</td>
+         </tr>
+
+         <tr>
+            <td>
+               <div class="cart-info">
+                  <img src="./img/nike-shoes-purple.png">
+                  <div class="cart-info__information">
+                     <p>Nike Air Jordan 1 Off White Blue</p>
+                     <small>Price:$400.00</small>
+                     <br>
+                     <a href="">remove</a>
+                  </div>
+               </div>
+            </td>
+            <td>
+               <div class="table-proudct__input"><input type="number" value="1" min="0"></div>
+            </td>
+            <td>$400.000</td>
+         </tr>
+
+         <tr>
+            <td>
+               <div class="cart-info">
+                  <img src="./img/nike-shoes-white.png">
+                  <div class="cart-info__information">
+                     <p>Nike-basketball-purple</p>
+                     <small>Price:$220.00</small>
+                     <br>
+                     <a id="item" href="">remove</a>
+                  </div>
+               </div>
+            </td>
+            <td>
+               <div class="table-proudct__input"><input type="number" value="1" min="0"></div>
+            </td>
+            <td>$220.000</td>
+         </tr>
+      </table>
+      <div class="total-price">
+         <table>
+            <tr>
+               <td>Subtotal</td>
+               <td>$1120.00</td>
+            </tr>
+            <tr>
+               <td>Tax</td>
+               <td>$35.00</td>
+            </tr>
+            <tr>
+               <td>Total</td>
+               <td>$1155.00</td>
+            </tr>
+         </table>
+      </div>
+      <table>
+         <div class="field-btn">
+            <div class="btn-layer"></div>
+            <input type="submit" value="CHECKOUT">
+      </table>
+   </div>
+
+   <!-- footer section -->
+   <footer>
+      <div class="grid wide">
+         <div class="footer-wrapper">
+            <!-- First Section -->
+            <div class="footer__about footer-section">
+               <h2 class="footer__title">About us</h2>
+               <div class="about__logo">
+                  <img src="./img/Black-logo.png" alt="Logo Zeus">
+               </div>
+
+               <!-- <ul class="about-social">
+                  <li class="about-social__item"><a href="" class="about-social__link"><i
+                           class='bx bxl-facebook'></i></a></li>
+                  <li class="about-social__item"><a href="" class="about-social__link"><i
+                           class='bx bxl-instagram'></i></a></li>
+                  <li class="about-social__item"><a href="" class="about-social__link"><i
+                           class='bx bxl-twitter'></i></a></li>
+                  <li class="about-social__item"><a href="" class="about-social__link"><i class='bx bxs-phone'></i></a>
+                  </li>
+               </ul> -->
+               <div class="about__desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque vitae placeat veritatis quibusdam cum
+                  ex quas numquam laborum eaque nihil voluptatum est ullam expedita qui ipsa, repellat, ipsam iusto
+                  atque.
+               </div>
+
+            </div>
+
+            <!-- Second Section -->
+            <div class="footer__quicklinks footer-section">
+               <h2 class="footer__title">Quick Links</h2>
+
+               <ul class="quicklinks__list">
+                  <li class="footer__item"><a href="#" class="footer__link">About</a></li>
+                  <li class="footer__item"><a href="#" class="footer__link">FAQ</a></li>
+                  <li class="footer__item"><a href="#" class="footer__link">Privacy Police</a></li>
+                  <li class="footer__item"><a href="#" class="footer__link">Payment</a></li>
+                  <li class="footer__item"><a href="#" class="footer__link">Help</a></li>
+                  <li class="footer__item"><a href="#" class="footer__link">Contact</a></li>
+               </ul>
+            </div>
+
+            <!-- Shop Section -->
+            <div class="footer__shop footer-section">
+               <h2 class="footer__title">Shop</h2>
+
+               <ul class="shop__list">
+                  <li class="footer__item"><a href="#" class="footer__link">Nike</a></li>
+                  <li class="footer__item"><a href="#" class="footer__link">Adidas</a></li>
+                  <li class="footer__item"><a href="#" class="footer__link">Zara</a></li>
+               </ul>
+            </div>
+            <!-- Contact Section -->
+            <div class="footer__contact footer-section">
+               <h2 class="footer__title">Contact Us</h2>
+
+               <ul class="contact__list">
+                  <li class="footer__item">
+                     <span><i class='bx bxs-map'></i></span>
+                     <span href="#" class="footer__link">1 Ly Tu Trong, Can Tho city, Vietnam</span>
+                  </li>
+                  <li class="footer__item">
+                     <span><i class='bx bxs-phone'></i></span>
+                     <p>
+                        <a href="tel:+0932898078" class="footer__link">0932898078</a><br>
+                        <br>
+                        <a href="tel:+0567296579" class="footer__link">0567296579</a>
+                     </p>
+                  </li>
+                  <li class="footer__item">
+                     <span><i class='bx bxl-gmail'></i></span>
+                     <a href="mailto:phanquanglam908@gmail.com" class="footer__link">phanquanglam908@gmail.com</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <div class="copyright">
+      <p>Copyright &copy; Zeus - Sport Men's Clothes</p>
+   </div>
+
+   <script src="./js/script.js"></script>
+</body>
+
+</html>

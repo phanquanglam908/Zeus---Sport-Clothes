@@ -54,6 +54,9 @@
    .navbar__menu-toggle {
       display: block;
    }
+   .menu-mobile {
+      display: block;
+   }
 
    /* ========== hero ========== */
    .hero {

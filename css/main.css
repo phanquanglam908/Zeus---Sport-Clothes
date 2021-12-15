@@ -143,6 +143,7 @@ header {
    padding: 1rem;
    margin-left: 1rem;
    cursor: pointer;
+   color: var(--black);
 }
 
 .navbar__menu-toggle {
@@ -152,6 +153,10 @@ header {
 .navbar__menu-toggle i {
    font-size: 4rem;
    cursor: pointer;
+}
+
+.menu-mobile {
+   display: none;
 }
 
 /* ========= Hero Section ========== */

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Zues - Login</title>
+   <!-- CSS -->
+   <link rel="stylesheet" href="./css/reset.css">
+   <link rel="stylesheet" href="./css/grid.css">
+   <link rel="stylesheet" href="./css/main.css">
+   <link rel="stylesheet" href="./css/login.css">
+   <link rel="stylesheet" href="./css/reponsive.css">
+
+   <!-- icon -->
+   <link href='https://unpkg.com/boxicons@2.1.0/css/boxicons.min.css' rel='stylesheet'>
+   <link rel="icon" href="./img/logo tab bar.png">
+</head>
+
+<body>
+   <header class="header">
+      <div class="grid wide">
+         <div class="navbar">
+            <div class="navbar__logo">
+               <a href="index.html" class="logo-link">
+                  <img src="./img/logo for web.png" alt="" class="logo__img">
+               </a>
+            </div>
+
+            <input type="checkbox" hidden id="menu-control" class="menu-control">
+            <div class="navbar__navigation">
+               <ul class="navigation">
+                  <label for="menu-control" class="cancel-icon">
+                     <i class='bx bx-x'></i>
+                  </label>
+                  <li class="navigation__item "><a href="index.html" class="navigation__link">HOME</a></li>
+                  <li class="navigation__item"><a href="product.html" class="navigation__link">PRODUCT</a>
+                  </li>
+                  <li class="navigation__item"><a href="hotsale.html" class="navigation__link">HOT SALE</a>
+                  </li>
+                  <li class="navigation__item"><a href="about.html" class="navigation__link">ABOUT US</a>
+                  </li>
+                  <li class="navigation__item"><a href="blog.html" class="navigation__link">BLOG</a></li>
+                  <li class="navigation__item menu-mobile"><a href="#" class="navigation__link"><i
+                           class='bx bx-search'></i></a></li>
+                  <li class="navigation__item menu-mobile"><a href="login.html" class="navigation__link"><i
+                           class='bx bx-user'></i></a></li>
+                  <li class="navigation__item menu-mobile"><a href="shoppingcart.html" class="navigation__link"><i
+                           class='bx bx-cart'></i></a></li>
+               </ul>
+            </div>
+
+            <div class="navbar__service">
+               <a href="#" class="service__search">
+                  <i class='bx bx-search'></i>
+               </a>
+               <a href="./login.html" class="service__user">
+                  <i class='bx bx-user'></i>
+               </a>
+               <a href="./shoppingcart.html" class="service__cart">
+                  <i class='bx bx-cart'></i>
+               </a>
+            </div>
+
+            <label for="menu-control" class="navbar__menu-toggle">
+               <i class='bx bx-menu'></i>
+            </label>
+            <label for="menu-control" class="overplay-bg"></label>
+         </div>
+      </div>
+   </header>
+
+   <div class="infomation">
+      <div class="wrapper-login">
+         <div class="logo">
+         </div>
+         <div class="title-text">
+            <div class="title login">Login Form</div>
+            <div class="title signup">Signup Form</div>
+         </div>
+         <div class="form-container">
+            <div class="slide-controls">
+               <input type="radio" name="slide" id="login" checked>
+               <input type="radio" name="slide" id="signup">
+               <label for="login" class="slide login">Login</label>
+               <label for="signup" class="slide signup">Signup</label>
+               <div class="slider-tab"></div>
+            </div>
+            <div class="form-inner">
+               <form action="cart.html" class="login">
+                  <div class="field">
+                     <input type="email" placeholder="Email Address" required>
+                  </div>
+                  <div class="field">
+                     <input type="password" placeholder="Password" required>
+                  </div>
+                  <div class="pass-link"><a href="https://www.researchgate.net/application.LostPassword.html">Forgot
+                        password?</a></div>
+                  <div class="field login-btn">
+                     <div class="login-btn-layer"></div>
+                     <input type="submit" value="Login">
+                  </div>
+                  <br>
+                  <div class="login-social">
+                     <a id="apple_login" class="circle apple" href="https://www.icloud.com/">
+                        <i class='bx bxl-apple'></i>
+                     </a>
+                     <a id="google_login" class="circle google"
+                        href="https://accounts.google.com/ServiceLogin/identifier?elo=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin">
+                        <i class='bx bxl-google'></i>
+                     </a>
+                     <a id="facebook_login" class="circle facebook" href="https://vi-vn.facebook.com/login/web/">
+                        <i class='bx bxl-facebook'></i>
+                     </a>
+                  </div>
+                  <div class="signup-link"> <a href="">Signup now</a></div>
+               </form>
+               <form action="#" class="signup">
+                  <div class="field">
+                     <input type="name" placeholder="Full Name" required>
+                  </div>
+                  <div class="field">
+                     <input type="email" placeholder="Email Address" required>
+                  </div>
+                  <div class="field">
+                     <input type="password" placeholder="Password" required>
+                  </div>
+                  <div class="field">
+                     <input type="password" placeholder="Confirm password" required>
+                  </div>
+                  <div class="field login-btn">
+                     <div class="login-btn-layer"></div>
+                     <input type="submit" value="Create Account">
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+
+
+   <!-- footer section -->
+   <footer>
+      <div class="grid wide">
+         <div class="footer-wrapper">
+            <!-- First Section -->
+            <div class="footer__about footer-section">
+               <h2 class="footer__title">About us</h2>
+               <div class="about__logo">
+                  <img src="./img/Black-logo.png" alt="Logo Zeus">
+               </div>
+
+               <!-- <ul class="about-social">
+                  <li class="about-social__item"><a href="" class="about-social__link"><i
+                           class='bx bxl-facebook'></i></a></li>
+                  <li class="about-social__item"><a href="" class="about-social__link"><i
+                           class='bx bxl-instagram'></i></a></li>
+                  <li class="about-social__item"><a href="" class="about-social__link"><i
+                           class='bx bxl-twitter'></i></a></li>
+                  <li class="about-social__item"><a href="" class="about-social__link"><i class='bx bxs-phone'></i></a>
+                  </li>
+               </ul> -->
+               <div class="about__desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque vitae placeat veritatis quibusdam cum
+                  ex quas numquam laborum eaque nihil voluptatum est ullam expedita qui ipsa, repellat, ipsam iusto
+                  atque.
+               </div>
+
+            </div>
+
+            <!-- Second Section -->
+            <div class="footer__quicklinks footer-section">
+               <h2 class="footer__title">Quick Links</h2>
+
+               <ul class="quicklinks__list">
+                  <li class="footer__item"><a href="#" class="footer__link">About</a></li>
+                  <li class="footer__item"><a href="#" class="footer__link">FAQ</a></li>
+                  <li class="footer__item"><a href="#" class="footer__link">Privacy Police</a></li>
+                  <li class="footer__item"><a href="#" class="footer__link">Payment</a></li>
+                  <li class="footer__item"><a href="#" class="footer__link">Help</a></li>
+                  <li class="footer__item"><a href="#" class="footer__link">Contact</a></li>
+               </ul>
+            </div>
+
+            <!-- Shop Section -->
+            <div class="footer__shop footer-section">
+               <h2 class="footer__title">Shop</h2>
+
+               <ul class="shop__list">
+                  <li class="footer__item"><a href="#" class="footer__link">Nike</a></li>
+                  <li class="footer__item"><a href="#" class="footer__link">Adidas</a></li>
+                  <li class="footer__item"><a href="#" class="footer__link">Zara</a></li>
+               </ul>
+            </div>
+            <!-- Contact Section -->
+            <div class="footer__contact footer-section">
+               <h2 class="footer__title">Contact Us</h2>
+
+               <ul class="contact__list">
+                  <li class="footer__item">
+                     <span><i class='bx bxs-map'></i></span>
+                     <span href="#" class="footer__link">1 Ly Tu Trong, Can Tho city, Vietnam</span>
+                  </li>
+                  <li class="footer__item">
+                     <span><i class='bx bxs-phone'></i></span>
+                     <p>
+                        <a href="tel:+0932898078" class="footer__link">0932898078</a><br>
+                        <br>
+                        <a href="tel:+0567296579" class="footer__link">0567296579</a>
+                     </p>
+                  </li>
+                  <li class="footer__item">
+                     <span><i class='bx bxl-gmail'></i></span>
+                     <a href="mailto:phanquanglam908@gmail.com" class="footer__link">phanquanglam908@gmail.com</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <div class="copyright">
+      <p>Copyright &copy; Zeus - Sport Men's Clothes</p>
+   </div>
+   <script src="./js/script.js"></script>
+</body>
+
+</html>
