@@ -101,6 +101,19 @@
    }
 }
 
+/* ========== Product details ========= */
+.product-detail {
+   padding: 0 2rem;
+}
+.related-product {
+   padding: 0 2rem;
+}
+.related-product__product {
+   margin-top: 5rem;
+}
+.related-product__title {
+   font-size: 8rem;
+}
 /* =========================================================== Mobile ==========  */
 @media screen and (max-width: 767px) {
    html {
@@ -313,6 +326,118 @@
    .about__desc {
       font-size: 2.4rem;
       line-height: 3rem;
+   }
+
+   /* ========== Product Detail ========= */
+
+   .related-product__title::before {
+      padding: 0;
+   }
+   .related-product__title::after {
+      display: none;
+   }
+   .img-gallary__img-wrapper {
+      height: 75%;
+   }
+   .product-infor__stage {
+      font-size: 2.3rem;
+   }
+   .product-infor__title {
+      font-size: 15rem;
+   }
+   .product-infor__subtitle {
+      font-size: 2.3rem;
+   }
+   .product-infor__price {
+      font-size: 5rem;
+   }
+   .product-info__description h3 {
+      font-size: 5rem;
+   }
+   .product-info__description p {
+      font-size: 2rem;
+      width: 100%;
+      line-height: 2.6rem;
+   }
+   .color-control__title {
+      font-size: 4rem;
+   }
+   .size-control__title {
+      font-size: 4rem;
+   }
+   .size-control__selection {
+      font-size: 2.5rem;
+   }
+   .product-info__input {
+      width: 14rem;
+   }
+   .product-info__btn {
+      font-size: 2rem;
+      padding: 0 2rem;
+   }
+   .product-info__btn i {
+      font-size: 3rem;
+   }
+
+   /* ======================= About Us ======================= */
+
+   .about-us__form-wrapper{
+      display: flex;
+      flex-direction: column-reverse;
+      height: 100%;
+   }
+   .about-us__contact{
+      position: unset;
+      top: unset;
+      left: unset;
+      transform: unset;
+      width: 100%;
+      height: auto;
+      padding-top: 2rem;
+   }
+   
+   .about-us__get-in-touch{
+      height: auto;
+      position: unset;
+      top: unset;
+      bottom: unset;
+      transform: unset;
+      width: 100%;
+      padding: 2rem;
+   }
+
+   .get-in-touch__form{
+      width: 100%;
+   }
+
+   .about-us__btn{
+      width: 100%;
+   }
+
+
+
+   .about-us__input input,
+   .about-us__input textarea{
+      width: 100%;
+   }
+
+   .brand-name{
+      padding: 0 2rem;
+      padding-bottom: 4rem;
+   }
+
+   .brand-name__pattern--blue{
+      top: 20%;
+   }
+   .brand-name__pattern--yellow{
+      bottom: -4%;
+   }
+
+   .brand-name__bg-overplay::after{
+      font-size: 3rem;
+   }
+   .brand-name__title{
+      font-size: 8rem;
    }
 }
 

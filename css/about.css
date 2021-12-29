@@ -1,0 +1,437 @@
+.about-us__img-content,
+.about-us__content {
+   height: 100%;
+}
+
+.about-us__hero {
+   margin-bottom: 30rem;
+   background: url(../img/AboutUsPage.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   height: 60rem;
+   position: relative;
+}
+.img-wrapper {
+   height: 50%;
+   width: 20%;
+}
+
+.img-wrapper--1 {
+   position: absolute;
+   top: 22%;
+   left: 16%;
+}
+.img-wrapper--2 {
+   position: absolute;
+   bottom: -18%;
+   left: 30%;
+}
+
+.about-us__img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.img__shape {
+   position: absolute;
+}
+
+.img__shape--blue {
+   width: 22%;
+   height: 25%;
+   background-color: #005578;
+   bottom: 20%;
+   left: 13%;
+}
+.img__shape--red {
+   width: 20%;
+   height: 50%;
+   background-color: #c83e3e;
+   bottom: -28%;
+   left: 33%;
+}
+.img__shape--white {
+   border: 5px solid var(--white);
+   width: 29%;
+   height: 40%;
+   top: 48%;
+   left: 18%;
+}
+
+.about-us__content {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   gap: 1rem;
+}
+.content__title {
+   font-family: var(--title-font);
+   font-size: 9rem;
+}
+.content__line {
+   width: 10%;
+   height: 3px;
+   background-color: var(--black);
+}
+.content__desc {
+   text-align: center;
+   width: 80%;
+   font-size: 1.4rem;
+   line-height: 2rem;
+}
+
+/* =====================Our-mission======================= */
+.our-mission {
+   height: 65rem;
+   margin-bottom: 30rem;
+}
+
+.our-mission__wrapper {
+   background-color: rgb(240, 240, 240);
+   padding: 0 2rem;
+   height: 100%;
+}
+.our-mission__content {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 2rem;
+}
+.our-mission__desc {
+   text-align: left;
+}
+
+.our-mission__img {
+   position: relative;
+}
+
+.our-mission__img-wrapper img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.our-mission__img-wrapper {
+   width: 45%;
+   height: 55%;
+}
+.our-mission__img-wrapper--1 {
+   position: absolute;
+   top: -10%;
+   left: 0;
+}
+.our-mission__img-wrapper--2 {
+   position: absolute;
+   top: 10%;
+   left: 48%;
+}
+.our-mission__img-wrapper--3 {
+   position: absolute;
+   bottom: -3%;
+   left: 0;
+}
+.our-mission__img-wrapper--4 {
+   position: absolute;
+   bottom: -22%;
+   right: 7%;
+}
+
+.our-mission__pattern {
+   width: 80%;
+   position: absolute;
+   top: 20%;
+   left: -10%;
+}
+
+.our-mission__pattern img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.about-us__map {
+   width: 100%;
+   height: 50rem;
+   margin-bottom: 12rem;
+}
+
+
+/* ==================About us Form=================== */
+.about-us__form{
+   margin-bottom: 12rem;
+}
+
+.about-us__form-wrapper{
+   position: relative;
+   width: 100%;
+   height: 60rem;
+}
+.about-us__contact{
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   left: 0;
+   background-color: var(--black);
+   color: var(--white);
+
+   padding-left: 5%;
+   width: 30%;
+   z-index: 2;
+   height: 80%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center ;
+   gap: 4rem;
+
+}
+
+.about-us__get-in-touch{
+   height: 100%;
+   position: absolute;
+   top: 0;
+   right: 0;
+   background-color: rgb(240, 240, 240);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding-left: 25%;
+   width: 90%;
+   z-index: 1;
+ 
+}
+
+.contact__title{
+   font-size: 4rem;
+   font-weight: 500;
+}
+
+.contact__infor{
+   font-size: 1.4rem;
+}
+
+.contact__infor p{
+   display: inline-block;
+   margin-left: 1rem;
+}
+
+
+.contact__infor li:not(:last-child){
+   margin-bottom: 2rem;
+}
+
+.contact__social{
+   display: flex;
+   gap: 2rem;
+}
+
+.get-in-touch__form{
+   width: 80%;
+   display: flex;
+   flex-direction: column;
+   
+}
+
+.form__title{
+   font-size: 4rem;
+   font-weight: 500;
+}
+.form__subtitle{
+   font-size: 1.4rem;
+   color: var(--sub-text-color);
+   margin-top: 0.5rem;
+   margin-bottom: 4rem;
+}
+
+.about-us__input{
+   margin-bottom: 2rem;
+   position: relative;
+   padding: 15px 0 0;
+}
+.about-us__input input,
+.about-us__input textarea{
+   width: 80%;
+   height: 4rem;
+   border: 0;
+   border-bottom: 3px solid var(--black);
+   outline: 0;
+   font-size: 1.6rem;
+   color: var(--black);
+   background: transparent;
+   transition: border-color 0.2s;
+}
+.about-us__input textarea{
+   height: 10rem;
+}
+.about-us__input input::placeholder,
+.about-us__input textarea::placeholder{
+   color: transparent;
+}
+
+.about-us__input input:placeholder-shown ~ .form__label,
+.about-us__input textarea:placeholder-shown ~ .form__label{
+   font-size: 1.5rem;
+    cursor: text;
+    top: 20px;
+}
+
+.about-us__input input:focus,
+.about-us__input textarea:focus{
+   padding-bottom: 6px;
+  border-width: 3px;
+  border-bottom: 3px solid var(--red-hover);
+}
+
+.about-us__input input:focus ~ .form__label,
+.about-us__input textarea:focus ~ .form__label{
+   position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1.3rem;
+    color: var(--red);
+    font-weight: 500;
+}
+
+.form__label {
+   position: absolute;
+   top: 0;
+   display: block;
+   transition: 0.2s;
+   font-size: 1.2rem;
+   color: var(--sub-text-color);
+ }
+
+ 
+
+/* CSS */
+.about-us__btn {
+   margin-top: 2rem;
+   width: 25%;
+  background: var(--red);
+  border: 1px solid var(--red-hover);
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: var(--title-font);
+  letter-spacing: 2px;
+  font-size: 2rem;
+  outline: 0;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  transition: all 0.2s ease;
+  padding: 1rem 2rem;
+}
+
+.about-us__btn:hover,
+.about-us__btn:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: var(--red-hover);
+}
+
+.about-us__btn:active {
+  opacity: .5;
+}
+
+
+/* ====================Brand Name =========================== */
+.brand-name{
+   background-color: rgb(240, 240, 240);
+   width: 100%;
+   padding-top: 4rem;
+   padding-bottom: 6rem;
+   position: relative;
+   position: relative;
+   margin-bottom: 12rem;
+}
+
+.brand-name__pattern{
+   position: absolute;
+   width: 40%;
+   height: 40%;
+}
+
+.brand-name__pattern--blue{
+   left: 0;
+   top: 22%;
+}
+.brand-name__pattern--yellow{
+   right: 0;
+   bottom: 2%;
+   transform: rotate(90deg);
+}
+
+.brand-name__pattern img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.brand-name__heading{
+   margin-bottom: 6rem;
+}
+
+.brand-name__bg-overplay{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+
+
+.brand-name__bg-overplay:hover{
+   transform: translateY(-15px);
+   transition: all 0.3s ease; 
+}
+
+.brand-name__bg-overplay::before{
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   opacity: 0.2;
+   content: "";
+   background: var(--black);
+}
+
+.brand-name__bg-overplay::after{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   font-size: 6rem;
+   color: var(--white);
+   letter-spacing: 1px;
+}
+
+.bg-overplay__adidas::after{
+   content: "ADIDAS";
+}
+.bg-overplay__nike::after{
+   content: "NIKE";
+}
+.bg-overplay__zara::after{
+   content: "ZARA";
+}
+
+
+.brand-name__img img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+@media (min-width: 1024px) and (max-width:1239px) {
+   .our-mission__content{
+      display: flex;
+   }
+}

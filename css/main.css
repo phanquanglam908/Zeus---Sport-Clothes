@@ -5,9 +5,11 @@
 }
 :root {
    --white: #ffffff;
+   --gray-white: rgb(240, 240, 240);
    --black: #0c0e07;
    --red: #de2424;
    --red-hover: #911b1b;
+   --sub-text-color: #788391;
 
    --title-font: "Built Titling", sans-serif;
    --body-font: "Ubuntu", sans-serif;

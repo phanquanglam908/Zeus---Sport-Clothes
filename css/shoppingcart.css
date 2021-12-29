@@ -2,17 +2,24 @@
 .small-container {
    max-width: 108rem;
    margin: auto;
-   padding-left: 1rem;
-   padding-right: 1rem;
-}
-.cart-page {
-   margin: 15rem auto 6rem auto;
+   padding: 0 2rem;
+   margin: 1rem auto 6rem auto;
 }
 table {
    width: 100%;
    border-collapse: collapse;
 }
-
+.contai{
+   padding: 0 2rem;
+   max-width: 108rem;
+   margin-top: 15rem;
+   margin-left: auto;
+   margin-right: auto;
+   font-size: 2rem; 
+   justify-content: space-between;
+   display: flex;
+   color: red;
+}
 .table-product tr th:first-child {
    padding-left: 2rem;
 }
@@ -25,15 +32,17 @@ table {
    padding: 2rem 0;
 }
 
-.table-product tr td:nth-child(1) {
+.table-product  td:nth-child(1) {
    width: 45%;
+   font-size: 1.5rem;
 }
-.table-product tr td:nth-child(2) {
-   width: 20%;
+.table-product  td:nth-child(2) {
+   width: 30%;
+   font-size: 1.5rem;
 }
-.table-product tr td:nth-child(3) {
+.table-product  td:nth-child(3) {
    width: 20%;
-   font-size: 1.6rem;
+   font-size: 1.5rem;
 }
 
 .cart-info {
@@ -42,13 +51,14 @@ table {
 }
 th {
    text-align: left;
-   padding: 1.5rem 0;
+   padding: 1.2rem 0.3rem;
    color: var(--white);
    background: var(--black);
    font-weight: normal;
    font-size: 1.6rem;
+   top: -25rem;
+   position: relative;
 }
-
 .td input {
    width: 4rem;
    height: 3rem;
@@ -57,6 +67,7 @@ th {
 td a {
    color: var(--red);
    font-size: 1.2rem;
+   cursor: pointer;
 }
 td img {
    width: 8rem;
@@ -67,6 +78,12 @@ td img {
    display: flex;
    justify-content: flex-end;
    margin-top: 4rem;
+   font-size: 1.6rem;
+  color: red;
+ width: 100%;
+ margin-top: -4rem;
+ top: 4rem;
+ position: relative;
 }
 .total-price tr {
    height: 4rem;
@@ -95,19 +112,24 @@ th:last-child {
    text-align: right;
 }
 .field-btn input {
+   position: relative;
    background: black;
    border: none;
    color: white;
-   padding: 1.5rem 5.8rem;
+   padding: 1.3rem 3.8rem;
    font-size: 1.4rem;
-   margin: 1.4rem 0rem;
+   margin: 1.4rem 11rem;
    cursor: pointer;
+   left: -12rem;
+   
 }
 .field-btn input:hover {
    transition: all 0.3s ease;
    background-color: var(--red-hover);
 }
-
+.containermenu{
+top: 2rem;
+}
 .cart-info__information {
    font-size: 1.6rem;
    display: flex;
@@ -118,14 +140,29 @@ th:last-child {
 .cart-info__information small {
    padding: 1rem 0;
 }
+
+
+
+
+
+
 @media screen and (max-width: 1023px) {
    .table-product tr td:nth-child(3) {
       font-size: 1.8rem;
    }
+
+   .table-product  td:nth-child(2) {
+      width: 30%;
+      font-size: 1.5rem;
+   }
    th {
       font-size: 1.8rem;
+      padding: 0.2rem 0.6rem;
+      position: relative;
+      top: -30rem;
    }
    td a {
+      
       font-size: 1.5rem;
    }
    .total-price tr td {
@@ -136,17 +173,46 @@ th:last-child {
    }
    .field-btn input {
       font-size: 1.8rem;
+      margin: 2.4rem 0rem;
+      padding: 0.5rem 2.8rem;
+      letter-spacing: 2px;
    }
+   .total-price{
+      margin-top: -3rem;
+      font-size: 2rem;
+   }
+
+   .contai{
+      margin-top: 20rem;
+   }
+   .field-btn input {
+      font-size: 2.5rem;
+      padding: 1.5rem 2.8rem;
+  }
 }
 
 @media screen and (max-width: 767px) {
+   
+   .contai{
+      font-size: 3rem;
+   }
+   .total-price{
+      font-size: 2.3em;
+   }
    .table-product tr td:nth-child(3) {
       font-size: 2.3rem;
    }
+   
+   .table-product  td:nth-child(2) {
+      width: 30%;
+      font-size: 2rem;   
+   }
    th {
       font-size: 2.3rem;
+      top: -34rem;
    }
    td a {
+     
       font-size: 2.3rem;
    }
    .total-price tr td {
@@ -155,7 +221,8 @@ th:last-child {
    .cart-info__information {
       font-size: 2.3rem;
    }
-   .field-btn input {
-      font-size: 2.3rem;
-   }
 }
+.table-proudct i{
+   cursor: pointer;
+}
+

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Zues - Product Detail</title>
+   <!-- CSS -->
+   <link rel="stylesheet" href="./css/reset.css">
+   <link rel="stylesheet" href="./css/grid.css">
+   <link rel="stylesheet" href="./css/main.css">
+   <link rel="stylesheet" href="./css/product.css">
+   <link rel="stylesheet" href="./css/productdetail.css">
+   <link rel="stylesheet" href="./css/reponsive.css">
+
+   <!-- icon -->
+   <link href='https://unpkg.com/boxicons@2.1.0/css/boxicons.min.css' rel='stylesheet'>
+   <link rel="icon" href="./img/logo tab bar.png">
+
+   <!-- CndJs -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+      integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+   <header class="header">
+      <div class="grid wide">
+         <div class="navbar">
+            <div class="navbar__logo">
+               <a href="index.html" class="logo-link">
+                  <img src="./img/logo for web.png" alt="" class="logo__img">
+               </a>
+            </div>
+
+            <input type="checkbox" hidden id="menu-control" class="menu-control">
+            <div class="navbar__navigation">
+               <ul class="navigation">
+                  <label for="menu-control" class="cancel-icon">
+                     <i class='bx bx-x'></i>
+                  </label>
+                  <li class="navigation__item "><a href="index.html" class="navigation__link active">HOME</a></li>
+                  <li class="navigation__item"><a href="product.html" class="navigation__link">PRODUCT</a>
+                  </li>
+                  <li class="navigation__item"><a href="hotsale.html" class="navigation__link">HOT SALE</a>
+                  </li>
+                  <li class="navigation__item"><a href="about.html" class="navigation__link">ABOUT US</a>
+                  </li>
+                  <li class="navigation__item"><a href="blog.html" class="navigation__link">BLOG</a></li>
+                  <li class="navigation__item menu-mobile"><a href="#" class="navigation__link"><i
+                           class='bx bx-search'></i></a></li>
+                  <li class="navigation__item menu-mobile"><a href="login.html" class="navigation__link"><i
+                           class='bx bx-user'></i></a></li>
+                  <li class="navigation__item menu-mobile"><a href="shoppingcart.html" class="navigation__link"><i
+                           class='bx bx-cart'></i></a></li>
+               </ul>
+            </div>
+
+            <div class="navbar__service">
+               <a href="#" class="service__search">
+                  <i class='bx bx-search'></i>
+               </a>
+               <a href="./login.html" class="service__user">
+                  <i class='bx bx-user'></i>
+               </a>
+               <a href="./shoppingcart.html" class="service__cart">
+                  <i class='bx bx-cart'></i>
+               </a>
+            </div>
+
+            <label for="menu-control" class="navbar__menu-toggle">
+               <i class='bx bx-menu'></i>
+            </label>
+            <label for="menu-control" class="overplay-bg"></label>
+         </div>
+      </div>
+   </header>
+
+   <!-- Product Detail -->
+   <section class="product-detail">
+      <div class="grid wide">
+         <div class="row">
+            <div class="product-detail__img-gallary col l-5 m-12 c-12">
+               <div class="img-gallary__img-wrapper">
+                  <img src="./img/nike T-shirt 2.jpg" alt="" class="img-gallary__img" id="mainImg">
+               </div>
+
+               <div class="img-gallary__small-img-group">
+                  <div class="small-img-col">
+                     <img src="./img/nike T-shirt 2.jpg" width="100%" class="small-img" alt="">
+                  </div>
+                  <div class="small-img-col">
+                     <img src="./img/nike T-shirt 2 (2).jpg" width="100%" class="small-img" alt="">
+                  </div>
+                  <div class="small-img-col">
+                     <img src="./img/nike T-shirt 2 (3).jpg" width="100%" class="small-img" alt="">
+                  </div>
+                  <div class="small-img-col">
+                     <img src="./img/nike T-shirt 2 (4).jpg" width="100%" class="small-img" alt="">
+                  </div>
+               </div>
+            </div>
+
+
+            <div class="product-detail__product-infor col l-6 m-12 c-12">
+               <h5 class="product-infor__stage"><a href="product.html">Product</a> / T-Shirt</h5>
+               <h1 class="product-infor__title">Nike T-shirt</h1>
+               <h5 class="product-infor__subtitle">White T-shirt</h5>
+               <h3 class="product-infor__price">$100</h3>
+               <div class="product-info__description">
+                  <h3>Desctiption</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, nulla maxime? Magnam voluptatum
+                     placeat quasi nam natus cum consectetur minima.</p>
+               </div>
+               <div class="product-info__controller">
+                  <div class="color-control">
+                     <h4 class="color-control__title">Color: </h4>
+                     <ul class="color-list">
+                        <li><a href="#" class="color-circle color-white circle-active"></a></li>
+                        <li><a href="#" class="color-circle color-black"></a></li>
+
+                     </ul>
+                  </div>
+
+                  <div class="size-control">
+                     <h4 class="size-control__title">Size: </h4>
+                     <select class="size-control__selection" name="" id="">
+                        <option value="default">-- Select Size --</option>
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                        <option value="xl">XL</option>
+                        <option value="xxl">XXL</option>
+                     </select>
+                  </div>
+               </div>
+
+               <div class="product-info__input-wrapper">
+                  <input type="number" class="product-info__input" placeholder="1" min="0">
+                  <span class="forcus-border"></span>
+               </div>
+
+               <button class="product-info__btn">ADD TO CART <i class='bx bxs-cart'></i></button>
+            </div>
+         </div>
+
+      </div>
+   </section>
+
+   <!-- Related product -->
+   <section class="related-product">
+      <h1 class="related-product__title"></h1>
+
+      <div class="related-product__product">
+         <div class="grid wide">
+
+            <div class="owl-carousel owl-theme">
+               <div class="item">
+                  <div class="product-box">
+                     <div class="product__img">
+                        <img src="./img/adidas tenis.jpg" alt="">
+                        <div class="product-interaction-bg"></div>
+                        <div class="product-interaction">
+                           <i class='bx bx-show'></i>
+                           <i class='bx bx-cart'></i>
+                           <i class='bx bx-heart'></i>
+                        </div>
+                     </div>
+                     <div class="product__name">Tenis T-Shirt three line</div>
+                     <div class="product__price">$100</div>
+                  </div>
+               </div>
+               <div class="item">
+                  <div class="product-box">
+                     <div class="product__img">
+
+                        <img src="./img/nike T-shirt.jpg" alt="">
+                        <div class="product-interaction-bg"></div>
+                        <div class="product-interaction">
+                           <i class='bx bx-show'></i>
+                           <i class='bx bx-cart'></i>
+                           <i class='bx bx-heart'></i>
+                        </div>
+
+                     </div>
+                     <div class="product__name">Tenis T-Shirt three line</div>
+                     <div class="product__price">$100</div>
+                  </div>
+               </div>
+
+               <div class="item">
+                  <div class="product-box">
+                     <div class="product__img">
+
+                        <img src="./img/sweatpant black.jpg" alt="">
+                        <div class="product-interaction-bg"></div>
+                        <div class="product-interaction">
+                           <i class='bx bx-show'></i>
+                           <i class='bx bx-cart'></i>
+                           <i class='bx bx-heart'></i>
+                        </div>
+
+                     </div>
+                     <div class="product__name">Tenis T-Shirt three line</div>
+                     <div class="product__price">$100</div>
+                  </div>
+               </div>
+               <div class="item">
+                  <div class="product-box">
+                     <div class="product__img">
+
+                        <img src="./img/Pant grey.jpg" alt="">
+                        <div class="product-interaction-bg"></div>
+                        <div class="product-interaction">
+                           <i class='bx bx-show'></i>
+                           <i class='bx bx-cart'></i>
+                           <i class='bx bx-heart'></i>
+                        </div>
+
+                     </div>
+                     <div class="product__name">Tenis T-Shirt three line</div>
+                     <div class="product__price">$100</div>
+                  </div>
+               </div>
+               <div class="item">
+                  <div class="product-box">
+                     <div class="product__img">
+
+                        <img src="./img/nike  air force 1.jpg" alt="">
+                        <div class="product-interaction-bg"></div>
+                        <div class="product-interaction">
+                           <i class='bx bx-show'></i>
+                           <i class='bx bx-cart'></i>
+                           <i class='bx bx-heart'></i>
+                        </div>
+
+                     </div>
+                     <div class="product__name">Tenis T-Shirt three line</div>
+                     <div class="product__price">$100</div>
+                  </div>
+               </div>
+               <div class="item">
+                  <div class="product-box">
+                     <div class="product__img">
+
+                        <img src="./img/Nike custome air max 90.jpg" alt="">
+                        <div class="product-interaction-bg"></div>
+                        <div class="product-interaction">
+                           <i class='bx bx-show'></i>
+                           <i class='bx bx-cart'></i>
+                           <i class='bx bx-heart'></i>
+                        </div>
+
+                     </div>
+                     <div class="product__name">Tenis T-Shirt three line</div>
+                     <div class="product__price">$100</div>
+                  </div>
+               </div>
+               <div class="item">
+                  <div class="product-box">
+                     <div class="product__img">
+
+                        <img src="./img/nike-shoes-blue.png" alt="">
+                        <div class="product-interaction-bg"></div>
+                        <div class="product-interaction">
+                           <i class='bx bx-show'></i>
+                           <i class='bx bx-cart'></i>
+                           <i class='bx bx-heart'></i>
+                        </div>
+
+                     </div>
+                     <div class="product__name">Tenis T-Shirt three line</div>
+                     <div class="product__price">$100</div>
+                  </div>
+               </div>
+               <div class="item">
+                  <div class="product-box">
+                     <div class="product__img">
+
+                        <img src="./img/nike-shoes-purple.png" alt="">
+                        <div class="product-interaction-bg"></div>
+                        <div class="product-interaction">
+                           <i class='bx bx-show'></i>
+                           <i class='bx bx-cart'></i>
+                           <i class='bx bx-heart'></i>
+                        </div>
+
+                     </div>
+                     <div class="product__name">Tenis T-Shirt three line</div>
+                     <div class="product__price">$100</div>
+                  </div>
+               </div>
+               <div class="item">
+                  <div class="product-box">
+                     <div class="product__img">
+
+                        <img src="./img/nike-shoes-white.png" alt="">
+                        <div class="product-interaction-bg"></div>
+                        <div class="product-interaction">
+                           <i class='bx bx-show'></i>
+                           <i class='bx bx-cart'></i>
+                           <i class='bx bx-heart'></i>
+                        </div>
+
+                     </div>
+                     <div class="product__name">Tenis T-Shirt three line</div>
+                     <div class="product__price">$100</div>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- footer section -->
+   <footer>
+      <div class="grid wide">
+         <div class="footer-wrapper">
+            <!-- First Section -->
+            <div class="footer__about footer-section">
+               <h2 class="footer__title">About us</h2>
+               <div class="about__logo">
+                  <img src="./img/Black-logo.png" alt="Logo Zeus">
+               </div>
+
+               <!-- <ul class="about-social">
+                  <li class="about-social__item"><a href="" class="about-social__link"><i
+                           class='bx bxl-facebook'></i></a></li>
+                  <li class="about-social__item"><a href="" class="about-social__link"><i
+                           class='bx bxl-instagram'></i></a></li>
+                  <li class="about-social__item"><a href="" class="about-social__link"><i
+                           class='bx bxl-twitter'></i></a></li>
+                  <li class="about-social__item"><a href="" class="about-social__link"><i class='bx bxs-phone'></i></a>
+                  </li>
+               </ul> -->
+               <div class="about__desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque vitae placeat veritatis quibusdam cum
+                  ex quas numquam laborum eaque nihil voluptatum est ullam expedita qui ipsa, repellat, ipsam iusto
+                  atque.
+               </div>
+
+            </div>
+
+            <!-- Second Section -->
+            <div class="footer__quicklinks footer-section">
+               <h2 class="footer__title">Quick Links</h2>
+
+               <ul class="quicklinks__list">
+                  <li class="footer__item"><a href="#" class="footer__link">About</a></li>
+                  <li class="footer__item"><a href="#" class="footer__link">FAQ</a></li>
+                  <li class="footer__item"><a href="#" class="footer__link">Privacy Police</a></li>
+                  <li class="footer__item"><a href="#" class="footer__link">Payment</a></li>
+                  <li class="footer__item"><a href="#" class="footer__link">Help</a></li>
+                  <li class="footer__item"><a href="#" class="footer__link">Contact</a></li>
+               </ul>
+            </div>
+
+            <!-- Shop Section -->
+            <div class="footer__shop footer-section">
+               <h2 class="footer__title">Shop</h2>
+
+               <ul class="shop__list">
+                  <li class="footer__item"><a href="#" class="footer__link">Nike</a></li>
+                  <li class="footer__item"><a href="#" class="footer__link">Adidas</a></li>
+                  <li class="footer__item"><a href="#" class="footer__link">Zara</a></li>
+               </ul>
+            </div>
+            <!-- Contact Section -->
+            <div class="footer__contact footer-section">
+               <h2 class="footer__title">Contact Us</h2>
+
+               <ul class="contact__list">
+                  <li class="footer__item">
+                     <span><i class='bx bxs-map'></i></span>
+                     <span href="#" class="footer__link">1 Ly Tu Trong, Can Tho city, Vietnam</span>
+                  </li>
+                  <li class="footer__item">
+                     <span><i class='bx bxs-phone'></i></span>
+                     <p>
+                        <a href="tel:+0932898078" class="footer__link">0932898078</a><br>
+                        <br>
+                        <a href="tel:+0567296579" class="footer__link">0567296579</a>
+                     </p>
+                  </li>
+                  <li class="footer__item">
+                     <span><i class='bx bxl-gmail'></i></span>
+                     <a href="mailto:phanquanglam908@gmail.com" class="footer__link">phanquanglam908@gmail.com</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <div class="copyright">
+      <p>Copyright &copy; Zeus - Sport Men's Clothes</p>
+   </div>
+
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="./js/script.js"></script>
+   <script src="./js/product-detail-img.js"></script>
+</body>
+
+</html>

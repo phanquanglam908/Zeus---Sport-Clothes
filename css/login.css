@@ -1,38 +1,38 @@
 /* ---------------------------------login-signup------------ */
 .infomation {
-   display: flex;
-   justify-content: center;
-   align-items: center;
+   display: grid;
    height: 100%;
    width: 100%;
+   place-items: center;
    background-color: rgb(241, 241, 241);
-   padding-top: 15rem;
-   padding-bottom: 12rem;
 }
-::selection {
+/* ::selection{
    background: #1a75ff;
    color: #fff;
-}
-.wrapper-login {
+ } */
+.wrapper {
+   max-width: 490px;
    position: relative;
    overflow: hidden;
-   max-width: 51.5rem;
+   /* max-width: 50%; */
    background: #fff;
    padding: 3rem;
    box-shadow: 0rem 1.5rem 2rem rgba(0, 0, 0, 0.1);
+   margin-top: 15rem;
+   margin-bottom: 12rem;
 }
-.wrapper-login .title-text {
+.wrapper .title-text {
    display: flex;
    width: 200%;
 }
-.wrapper-login .title {
+.wrapper .title {
    width: 50%;
    font-size: 3.5rem;
    font-weight: 600;
    text-align: center;
    transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-.wrapper-login .slide-controls {
+.wrapper .slide-controls {
    position: relative;
    display: flex;
    height: 5rem;
@@ -87,7 +87,7 @@ input[type="radio"] {
    cursor: default;
    user-select: none;
 }
-.wrapper-login .form-container {
+.wrapper .form-container {
    width: 100%;
    overflow: hidden;
 }
@@ -105,27 +105,37 @@ input[type="radio"] {
    margin-top: 2rem;
 }
 .form-inner form .field input {
-   font-family: "Ubuntu";
    height: 100%;
    width: 100%;
    outline: none;
-   padding-left: 1.5rem;
    border: 0.1rem solid lightgrey;
    border-bottom-width: 0.2rem;
    font-size: 1.7rem;
+   padding-left: 5px;
 }
-.form-inner form .field input:focus {
+.field__email input,
+.field__password input {
+   padding-left: 1.5rem;
+}
+
+.field-admin.success input {
+   border-radius: red;
+}
+.field-admin.error input {
+   border-radius: green;
+}
+/* .form-inner form .field input:focus{
    border-color: #1a75ff;
    box-shadow: inset 0 0 0.3rem #fb6aae;
-}
-.form-inner form .field input::placeholder {
+ }  */
+/* .form-inner form .field input::placeholder{
    color: #999;
-}
-form .field input:focus::placeholder {
+ }
+ form .field input:focus::placeholder{
    color: #1a75ff;
-}
+ }  */
 .form-inner form .pass-link {
-   margin-top: 0.5rem;
+   margin: 1rem 0;
 }
 .form-inner form .signup-link {
    text-align: center;
@@ -137,45 +147,67 @@ form .field input:focus::placeholder {
    font-size: 1.6rem;
    color: #1a75ff;
    text-decoration: none;
-   height: 1.25rem;
-   margin-top: 1.25rem;
-   margin-bottom: -0.5rem;
 }
+
 .form-inner form .pass-link a:hover,
 .form-inner form .signup-link a:hover {
    text-decoration: underline;
 }
-form .login-btn {
-   height: 5rem;
-   width: 100%;
+
+.form-control input {
    position: relative;
-   overflow: hidden;
-}
-form .login-btn .login-btn-layer {
-   height: 100%;
-   width: 300%;
-   position: absolute;
-   left: 0%;
-   background: black;
-}
-form .login-btn:hover .login-btn-layer {
-   left: 0;
-   transition: 0.6s ease-in-out;
-   background: rgb(255, 0, 51);
-}
-form .login-btn input[type="submit"] {
-   font-family: "Ubuntu";
-   height: 100%;
+   font-family: "ubuntu";
+   font-size: 1.7rem;
+   padding: 1.4rem;
    width: 100%;
-   z-index: 1;
-   position: relative;
+   padding-left: 1.5rem;
+   margin-top: 1rem;
+   border: 0.1rem solid lightgrey;
+   margin-bottom: 1.85rem;
+   display: block;
+   outline: none;
+}
+.form-control.success input {
+   border-color: #f70000;
+}
+.form-control.error input {
+   border-color: #81f733;
+}
+form .field__btn input {
+   width: 100%;
    background: none;
    border: none;
    color: #fff;
-   padding-left: 0;
-   font-size: 2rem;
+   font-size: 3rem;
+   text-transform: uppercase;
    font-weight: 500;
    cursor: pointer;
+   background-color: var(--black);
+   transition: all 0.3s ease;
+   letter-spacing: 2px;
+}
+form .login-btn input{
+   width: 100%;
+   background: none;
+   border: none;
+   color: #fff;
+   font-size: 2rem;
+   text-transform: uppercase;
+   font-weight: 500;
+   cursor: pointer;
+   background-color: var(--black);
+   transition: all 0.3s ease;
+   letter-spacing: 2px;
+}
+form  .field .login input{
+   display:none;
+}
+form .field__btn input:hover {
+   background-color: var(--red-hover);
+}
+
+form .login-btn input:hover{
+   background-color: var(--red-hover);
 }
 video {
    position: absolute;
@@ -186,34 +218,24 @@ video {
    object-fit: cover;
    opacity: 100%;
 }
-.login-social {
+.social-login {
    float: none;
    margin: 1.5rem auto 3rem;
    text-align: center;
-   display: block;
 }
-.login-social .circle {
+.social-login .circle {
    color: #ffffff;
    border-radius: 50%;
    display: inline-block;
-   padding: 1.4rem;
-   margin-right: 2.5rem;
+   margin: 0 1.5rem;
+   padding: 1.5rem;
+   background-color: var(--black);
 }
 
-.login-social i {
-   font-size: 2rem;
+.circle i {
+   font-size: 1.8rem;
 }
 
-.login-social .facebook {
-   background-color: #000000;
-   color: #ffffff;
-}
-.login-social .google {
-   background-color: #000000;
-}
-.login-social .apple {
-   background-color: #000000;
-}
 .facebook:hover {
    background-color: #6e83cd;
 }
@@ -225,4 +247,120 @@ video {
 }
 .signup-link {
    display: none;
+}
+/* ------------------------------shopping-cart-------------------------------- */
+.small-container {
+   max-width: 108rem;
+   margin: auto;
+   padding-left: 1rem;
+   padding-right: 1rem;
+}
+.cart-page {
+   margin: 8rem auto;
+}
+table {
+   width: 100%;
+   border-collapse: collapse;
+}
+.cart-info {
+   display: flex;
+   flex-wrap: wrap;
+}
+th {
+   text-align: left;
+   padding: 0.5rem;
+   color: #ffd;
+   background: #04232b;
+   font-weight: normal;
+}
+td {
+   padding: 1.1rem 0.5rem;
+}
+.td input {
+   width: 4rem;
+   height: 3rem;
+   padding: 0.5rem;
+}
+td a {
+   color: #ff523b;
+   font-size: 1.2rem;
+}
+td img {
+   width: 8rem;
+   height: 8rem;
+   margin-right: 1rem;
+}
+.total-price {
+   display: flex;
+   justify-content: flex-end;
+}
+.total-price table {
+   border-top: 0.3rem solid #04232b;
+   width: 100%;
+   max-width: 50rem;
+}
+td:last-child {
+   text-align: right;
+}
+th:last-child {
+   text-align: right;
+}
+.field-btn {
+   border: none;
+   font-size: 1.6rem;
+   text-align: right;
+}
+.field-btn input {
+   background: black;
+   border: none;
+   color: white;
+   padding: 1.5rem 5.8rem;
+   font-size: 1.4rem;
+   margin: 1.4rem 0rem;
+   font-family: "ubuntu";
+   cursor: pointer;
+   
+}
+.field-btn input:hover {
+   transition: 0.6s ease-in-out;
+   background: rgb(250, 0, 0);
+}
+/* --------------------------------------------- Bo sung -------------------------- */
+.form-message {
+   margin: 2rem 0;
+   font-size: 1.6rem;
+   text-align: center;
+}
+.form-message--error {
+   color: red;
+}
+.form-message--success {
+   color: green;
+}
+
+.social__or {
+   font-size: 1.4rem;
+   color: #04232b;
+   margin: 3rem 0;
+   position: relative;
+}
+.social__or::before {
+   content: "";
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   right: 0;
+   width: 40%;
+   height: 2px;
+   background-color: #04232b;
+}
+.social__or::after {
+   content: "";
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   left: 0;
+   width: 40%;
+   height: 2px;
+   background-color: #04232b;
 }

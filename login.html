@@ -47,7 +47,7 @@
                   <li class="navigation__item menu-mobile"><a href="login.html" class="navigation__link"><i
                            class='bx bx-user'></i></a></li>
                   <li class="navigation__item menu-mobile"><a href="shoppingcart.html" class="navigation__link"><i
-                           class='bx bx-cart'></i></a></li>
+                           class='bx bx-cart-alt'></i></a></li>
                </ul>
             </div>
 
@@ -59,7 +59,7 @@
                   <i class='bx bx-user'></i>
                </a>
                <a href="./shoppingcart.html" class="service__cart">
-                  <i class='bx bx-cart'></i>
+                  <i class='bx bx-cart-alt'></i>
                </a>
             </div>
 
@@ -71,8 +71,10 @@
       </div>
    </header>
 
+
+   <!-- Login section -->
    <div class="infomation">
-      <div class="wrapper-login">
+      <div class="wrapper">
          <div class="logo">
          </div>
          <div class="title-text">
@@ -87,22 +89,36 @@
                <label for="signup" class="slide signup">Signup</label>
                <div class="slider-tab"></div>
             </div>
+
             <div class="form-inner">
-               <form action="cart.html" class="login">
-                  <div class="field">
-                     <input type="email" placeholder="Email Address" required>
+
+               <!-- Login Form Begin -->
+               <form id="form-login" action="#" method="post" class="login">
+                  <!-- Email -->
+                  <div class="field field__email">
+                     <input type="email" placeholder="Email Address" id="username" required autofocus>
                   </div>
-                  <div class="field">
-                     <input type="password" placeholder="Password" required>
+                  <!-- Password -->
+                  <div class="field field__password">
+                     <input type="password" placeholder="Password" id="password" required autofocus>
                   </div>
-                  <div class="pass-link"><a href="https://www.researchgate.net/application.LostPassword.html">Forgot
-                        password?</a></div>
-                  <div class="field login-btn">
-                     <div class="login-btn-layer"></div>
+                  <!-- Forget Password -->
+                  <div class="pass-link">
+                     <a href="https://www.researchgate.net/application.LostPassword.html">Forgot password?</a>
+                  </div>
+                  <!-- Error Message -->
+                  <div class="form-message form-message--error">
+
+                  </div>
+                  <!-- Submit Buttn -->
+                  <div class="field field__btn">
                      <input type="submit" value="Login">
                   </div>
-                  <br>
-                  <div class="login-social">
+
+
+                  <!-- Social Icon -->
+                  <div class="social-login">
+                     <h3 class="social__or">Or login with</h3>
                      <a id="apple_login" class="circle apple" href="https://www.icloud.com/">
                         <i class='bx bxl-apple'></i>
                      </a>
@@ -116,29 +132,29 @@
                   </div>
                   <div class="signup-link"> <a href="">Signup now</a></div>
                </form>
-               <form action="#" class="signup">
-                  <div class="field">
-                     <input type="name" placeholder="Full Name" required>
-                  </div>
-                  <div class="field">
-                     <input type="email" placeholder="Email Address" required>
-                  </div>
-                  <div class="field">
-                     <input type="password" placeholder="Password" required>
-                  </div>
-                  <div class="field">
-                     <input type="password" placeholder="Confirm password" required>
-                  </div>
-                  <div class="field login-btn">
-                     <div class="login-btn-layer"></div>
-                     <input type="submit" value="Create Account">
-                  </div>
-               </form>
+               <!-- Login Form End -->
+            <form action="index.html"  class="signup" aria-required="false">
+               <div class="field">
+                  <input type="name"  id="fullname"  placeholder="Full Name" required>
+               </div>
+               <div class="field">
+                  <input type="email"  id="emailadd"  placeholder="Email Address" required>
+               </div>
+               <div class="field">
+                  <input type="password"  id="txtPassword" placeholder="Password" required>
+               </div>
+               <div class="field">
+                  <input type="password"  id="txtConfirmPassword" placeholder="Cofirm Password" required>
+               </div>
+               <div class="field login-btn">
+                  <!-- <div class="login-btn-layer"></div> -->
+                  <input type="submit" value="Create Account" onclick="return taotaikhoan()">
+               </div>
+            </form>
             </div>
          </div>
       </div>
    </div>
-
 
 
 
@@ -225,6 +241,7 @@
       <p>Copyright &copy; Zeus - Sport Men's Clothes</p>
    </div>
    <script src="./js/script.js"></script>
+   <script src="./js/login.js"></script>
 </body>
 
 </html>

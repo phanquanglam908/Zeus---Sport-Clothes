@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Zeus - About Us</title>
+   <!-- CSS -->
+   <link rel="stylesheet" href="./css/reset.css">
+   <link rel="stylesheet" href="./css/grid.css">
+   <link rel="stylesheet" href="./css/main.css">
+   <link rel="stylesheet" href="./css/about.css">
+   <link rel="stylesheet" href="./css/reponsive.css">
+
+   <!-- icon -->
+   <link href='https://unpkg.com/boxicons@2.1.0/css/boxicons.min.css' rel='stylesheet'>
+   <link rel="icon" href="./img/logo tab bar.png">
+</head>
+
+<body>
+   <header class="header">
+      <div class="grid wide">
+         <div class="navbar">
+            <div class="navbar__logo">
+               <a href="index.html" class="logo-link">
+                  <img src="./img/logo for web.png" alt="" class="logo__img">
+               </a>
+            </div>
+
+            <input type="checkbox" hidden id="menu-control" class="menu-control">
+            <div class="navbar__navigation">
+               <ul class="navigation">
+                  <label for="menu-control" class="cancel-icon">
+                     <i class='bx bx-x'></i>
+                  </label>
+                  <li class="navigation__item "><a href="index.html" class="navigation__link">HOME</a></li>
+                  <li class="navigation__item"><a href="product.html" class="navigation__link">PRODUCT</a>
+                  </li>
+                  <li class="navigation__item"><a href="hotsale.html" class="navigation__link">HOT SALE</a>
+                  </li>
+                  <li class="navigation__item"><a href="about.html" class="navigation__link active">ABOUT US</a>
+                  </li>
+                  <li class="navigation__item"><a href="blog.html" class="navigation__link">BLOG</a></li>
+                  <li class="navigation__item menu-mobile"><a href="#" class="navigation__link"><i
+                           class='bx bx-search'></i></a></li>
+                  <li class="navigation__item menu-mobile"><a href="login.html" class="navigation__link"><i
+                           class='bx bx-user'></i></a></li>
+                  <li class="navigation__item menu-mobile"><a href="shoppingcart.html" class="navigation__link"><i
+                           class='bx bx-cart-alt'></i></a></li>
+               </ul>
+            </div>
+
+            <div class="navbar__service">
+               <a href="#" class="service__search">
+                  <i class='bx bx-search'></i>
+               </a>
+               <a href="./login.html" class="service__user">
+                  <i class='bx bx-user'></i>
+               </a>
+               <a href="./shoppingcart.html" class="service__cart">
+                  <i class='bx bx-cart-alt'></i>
+               </a>
+            </div>
+
+            <label for="menu-control" class="navbar__menu-toggle">
+               <i class='bx bx-menu'></i>
+            </label>
+            <label for="menu-control" class="overplay-bg"></label>
+         </div>
+      </div>
+   </header>
+
+   <!-- main about us -->
+
+   <section class="about-us__hero">
+      <div class="grid wide" style="height: 100%;">
+         <div class="row" style="height: 100%;">
+            <div class="about-us__img-content col l-6 m-6 c-6">
+               <div class="img__shape img__shape--red"></div>
+               <div class="img__shape img__shape--blue"></div>
+               <div class="img__shape img__shape--white"></div>
+               <div class="img-wrapper img-wrapper--1">
+                  <img src="./img/post1.jpg" alt="" class="about-us__img">
+               </div>
+               <div class="img-wrapper img-wrapper--2">
+                  <img src="./img/snkrs-style-nike-kwondo1.jpg" alt="" class="about-us__img">
+               </div>
+            </div>
+            <div class="about-us__content col l-6 m-6 c-6">
+               <div class="content__title about-us__title">About us</div>
+               <span class="content__line"></span>
+               <div class="content__desc about-us__desc">Lacus ipsum sit egestas ultrices purus est vulputate. Lobortis
+                  fermentum
+                  facilisi non pellentesque aenean amet cras. Et tortor vel orci, malesuada rutrum tempor. Vel amet
+                  adipiscing nam lacus, felis amet elementum. Enim ultrices a elit interdum.
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+
+   <!-- Mission -->
+   <section class="our-mission">
+      <div class="grid wide our-mission__wrapper">
+         <div class="row" style="height: 100%;">
+            <div class="our-mission__content col l-6 m-6 c-6">
+               <div class="content__title our-mission__title">Our Mission</div>
+               <span class="content__line"></span>
+               <div class="content__desc our-mission__desc">
+                  Lacus ipsum sit egestas ultrices purus est vulputate. Lobortis fermentum
+                  facilisi non pellentesque aenean amet cras. Et tortor vel orci, malesuada rutrum tempor. Vel amet
+                  adipiscing nam lacus, felis amet elementum. Enim ultrices a elit interdum.
+               </div>
+            </div>
+            <div class="our-mission__img col l-6 m-6 c-6">
+               <div class="our-mission__pattern">
+                  <img src="./img/Pattern.png" alt="">
+               </div>
+
+               <div class="our-mission__img-wrapper our-mission__img-wrapper--1">
+                  <img src="./img/mission-1.jpg" alt="">
+               </div>
+               <div class="our-mission__img-wrapper our-mission__img-wrapper--2">
+                  <img src="./img/mission-2.jpg" alt="">
+               </div>
+               <div class="our-mission__img-wrapper our-mission__img-wrapper--3">
+                  <img src="./img/mission-3.jpg" alt="">
+               </div>
+               <div class="our-mission__img-wrapper our-mission__img-wrapper--4">
+                  <img src="./img/mission-4.jpg" alt="">
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Map -->
+   <div class="about-us__map" id="map">
+      <iframe
+         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d245.54960555858852!2d105.77985681115783!3d10.033876681813759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a0881f9a732075%3A0xfa43fbeb2b00ca73!2sCUSC%20-%20Cantho%20University%20Software%20Center!5e0!3m2!1svi!2s!4v1640232582339!5m2!1svi!2s"
+         style="border:0;" allowfullscreen="" width="100%" height="100%" loading="lazy"></iframe>
+   </div>
+
+   <section class="about-us__form">
+      <div class="grid wide">
+         <div class="about-us__form-wrapper">
+            <div class="about-us__contact">
+               <div class="contact__title">Contact Us</div>
+               <ul class="contact__infor">
+                  <li class="contact__address">
+                     <i class='bx bxs-map'></i>
+                     <p>1 Ly Tu Trong, Ninh Kieu, Can Tho</p>
+                  </li>
+                  <li class="contact__mail">
+                     <i class='bx bx-mail-send'></i>
+                     <p>zeusmanclothing@gmai.com</p>
+                  </li>
+                  <li class="contact__web">
+                     <i class='bx bx-desktop'></i>
+                     <p>www.zeus.com</p>
+                  </li>
+
+                  <li class="contact__phone">
+                     <i class='bx bxs-phone' ></i>
+                     <p>+84932898078</p>
+                  </li>
+               </ul>
+               <div class="contact__social">
+                  <a href="#" class="social-icon social-icon__f"><i class='bx bxl-facebook'></i></a>
+                  <a href="#" class="social-icon social-icon__ins"><i class='bx bxl-instagram'></i></a>
+                  <a href="#" class="social-icon social-icon__tw"><i class='bx bxl-twitter'></i></a>
+               </div>
+            </div>
+            <div class="about-us__get-in-touch">
+               <form action="" class="get-in-touch__form">
+                  <div class="form__title">Get in touch</div>
+                  <div class="form__subtitle">Feel free to drop us a line below!</div>
+
+                  <div class="about-us__input">
+                     <input type="text" class="input__your-name"placeholder="Name" required>
+                     <label for="name" class="form__label" >Name</label>
+                  </div>
+
+                  <div class="about-us__input">
+                     <input type="email" checked class="input__your-email" placeholder="Email" required>
+                     <label for="name" class="form__label" >Email</label>
+                  </div>
+
+                  <div class="about-us__input">
+                     <textarea maxlength="50" name="" id="" cols="30" rows="10" class="about-us__message" required placeholder="Message"></textarea>
+                     <label for="name" class="form__label">Message</label>
+                  </div>
+                  <button class="btn about-us__btn">Send</button>
+               </form>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Branding Section -->
+   <section class="brand-name">
+      <div class="brand-name__pattern brand-name__pattern--blue">
+         <img src="./img/Blue Pattern.png" alt="blue Pattern">
+      </div>
+      <div class="brand-name__pattern brand-name__pattern--yellow">
+         <img src="./img/Yellow Pattern.png" alt="Yellow Pattern">
+      </div>
+      
+      <div class="grid wide">
+         <div class="heading-section brand-name__heading">
+            <h1 class="heading-title brand-name__title">Our Products</h1>
+         </div>
+         <div class="row">
+            <div class="brand-name__img col l-4 m-4 c-4">
+               <div class="brand-name__bg-overplay bg-overplay__adidas">
+                  <img src="./img/adidas-brand.jpg" alt="adidas brand">
+               </div>
+            </div> 
+            <div class="brand-name__img col l-4 m-4 c-4">
+               <div class="brand-name__bg-overplay bg-overplay__nike">
+                  <img src="./img/mission-4.jpg" alt="adidas brand">
+               </div>
+            </div> 
+            <div class="brand-name__img col l-4 m-4 c-4">
+               <div class="brand-name__bg-overplay bg-overplay__zara">
+                  <img src="./img/Zara sport.png" alt="adidas brand">
+               </div>
+            </div> 
+            
+         </div>
+      </div>
+   </section>
+
+   <!-- footer section -->
+   <footer>
+      <div class="grid wide">
+         <div class="footer-wrapper">
+            <!-- First Section -->
+            <div class="footer__about footer-section">
+               <h2 class="footer__title">About us</h2>
+               <div class="about__logo">
+                  <img src="./img/Black-logo.png" alt="Logo Zeus">
+               </div>
+
+               <!-- <ul class="about-social">
+                     <li class="about-social__item"><a href="" class="about-social__link"><i
+                              class='bx bxl-facebook'></i></a></li>
+                     <li class="about-social__item"><a href="" class="about-social__link"><i
+                              class='bx bxl-instagram'></i></a></li>
+                     <li class="about-social__item"><a href="" class="about-social__link"><i
+                              class='bx bxl-twitter'></i></a></li>
+                     <li class="about-social__item"><a href="" class="about-social__link"><i class='bx bxs-phone'></i></a>
+                     </li>
+                  </ul> -->
+               <div class="about__desc">
+                  Fashion is more than price, style is more than fame, and acceptance is more than popularity. #zeus is
+                  wear individuality meets commonality.
+               </div>
+
+            </div>
+
+            <!-- Second Section -->
+            <div class="footer__quicklinks footer-section">
+               <h2 class="footer__title">Quick Links</h2>
+
+               <ul class="quicklinks__list">
+                  <li class="footer__item"><a href="#" class="footer__link">About</a></li>
+                  <li class="footer__item"><a href="#" class="footer__link">FAQ</a></li>
+                  <li class="footer__item"><a href="#" class="footer__link">Privacy Police</a></li>
+                  <li class="footer__item"><a href="#" class="footer__link">Payment</a></li>
+                  <li class="footer__item"><a href="#" class="footer__link">Help</a></li>
+                  <li class="footer__item"><a href="#" class="footer__link">Contact</a></li>
+               </ul>
+
+            </div>
+
+            <!-- Shop Section -->
+            <div class="footer__shop footer-section">
+               <h2 class="footer__title">Shop</h2>
+
+               <ul class="shop__list">
+                  <li class="footer__item"><a href="#" class="footer__link">Nike</a></li>
+                  <li class="footer__item"><a href="#" class="footer__link">Adidas</a></li>
+                  <li class="footer__item"><a href="#" class="footer__link">Zara</a></li>
+               </ul>
+            </div>
+            <!-- Contact Section -->
+            <div class="footer__contact footer-section">
+               <h2 class="footer__title">Contact Us</h2>
+
+               <ul class="contact__list">
+                  <li class="footer__item">
+                     <span><i class='bx bxs-map'></i></span>
+                     <span href="#" class="footer__link">1 Ly Tu Trong, Can Tho city, Vietnam</span>
+                  </li>
+                  <li class="footer__item">
+                     <span><i class='bx bxs-phone'></i></span>
+                     <p>
+                        <a href="tel:+0932898078" class="footer__link">0932898078</a><br>
+                        <br>
+                        <a href="tel:+0567296579" class="footer__link">0567296579</a>
+                     </p>
+                  </li>
+                  <li class="footer__item">
+                     <span><i class='bx bxl-gmail'></i></span>
+                     <a href="mailto:phanquanglam908@gmail.com" class="footer__link">phanquanglam908@gmail.com</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <div class="copyright">
+      <p>Copyright &copy; Zeus - Sport Men's Clothes</p>
+   </div>
+
+
+   <script src="./js/script.js"></script>
+
+
+</body>
+
+</html>
