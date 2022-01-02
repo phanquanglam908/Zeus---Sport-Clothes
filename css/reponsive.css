@@ -131,6 +131,10 @@
       transition: all 0.3s ease;
    }
 
+   .filter-mobile{
+      display: block;
+   }
+
    .product-interaction {
       position: absolute;
       bottom: 0;
@@ -439,6 +443,20 @@
    .brand-name__title{
       font-size: 8rem;
    }
+
+   .post-body{
+      padding: 0 2rem;
+   }
+   .post-details__body{
+      font-size: 2.2rem;
+      line-height: 4rem;
+   }
+
+   .footer-post__tags,
+   .footer-post__share{
+    font-size: 2rem;
+   
+}
 }
 
 @media screen and (max-width: 374px) {

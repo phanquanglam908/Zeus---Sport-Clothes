@@ -112,7 +112,17 @@ input[type="radio"] {
    border-bottom-width: 0.2rem;
    font-size: 1.7rem;
    padding-left: 5px;
+  
 }
+
+.field__btn .login-input-btn{
+   background: var(--red);
+}
+
+.login-btn .sign-up-btn-input{
+   background: var(--red);
+}
+
 .field__email input,
 .field__password input {
    padding-left: 1.5rem;

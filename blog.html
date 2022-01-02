@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zeus - Blog</title>
+     <!-- CSS -->
+   <link rel="stylesheet" href="./css/reset.css">
+   <link rel="stylesheet" href="./css/grid.css">
+   <link rel="stylesheet" href="./css/main.css">
+   <link rel="stylesheet" href="./css/product.css">
+    <link rel="stylesheet" href="./css/blog.css">
+   <link rel="stylesheet" href="./css/reponsive.css">
+
+    <!-- CndJs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+    integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+   <!-- icon -->
+   <link href='https://unpkg.com/boxicons@2.1.0/css/boxicons.min.css' rel='stylesheet'>
+   <link rel="icon" href="./img/logo tab bar.png">
+</head>
+<body>
+
+    <header class="header">
+        <div class="grid wide">
+           <div class="navbar">
+              <div class="navbar__logo">
+                 <a href="index.html" class="logo-link">
+                    <img src="./img/logo for web.png" alt="" class="logo__img">
+                 </a>
+              </div>
+  
+              <input type="checkbox" hidden id="menu-control" class="menu-control">
+              <div class="navbar__navigation">
+                 <ul class="navigation">
+                    <label for="menu-control" class="cancel-icon">
+                       <i class='bx bx-x'></i>
+                    </label>
+                    <li class="navigation__item "><a href="index.html" class="navigation__link">HOME</a></li>
+                    <li class="navigation__item"><a href="product.html" class="navigation__link">PRODUCT</a>
+                    </li>
+                    <li class="navigation__item"><a href="hotsale.html" class="navigation__link">HOT SALE</a>
+                    </li>
+                    <li class="navigation__item"><a href="about.html" class="navigation__link">ABOUT US</a>
+                    </li>
+                    <li class="navigation__item"><a href="blog.html" class="navigation__link active">BLOG</a></li>
+                    <li class="navigation__item menu-mobile"><a href="#" class="navigation__link"><i
+                             class='bx bx-search'></i></a></li>
+                    <li class="navigation__item menu-mobile"><a href="login.html" class="navigation__link"><i
+                             class='bx bx-user'></i></a></li>
+                    <li class="navigation__item menu-mobile"><a href="shoppingcart.html" class="navigation__link"><i
+                             class='bx bx-cart-alt'></i></a></li>
+                 </ul>
+              </div>
+  
+              <div class="navbar__service">
+                 <a href="#" class="service__search">
+                    <i class='bx bx-search'></i>
+                 </a>
+                 <a href="./login.html" class="service__user">
+                    <i class='bx bx-user'></i>
+                 </a>
+                 <a href="./shoppingcart.html" class="service__cart">
+                    <i class='bx bx-cart-alt'></i>
+                 </a>
+              </div>
+  
+              <label for="menu-control" class="navbar__menu-toggle">
+                 <i class='bx bx-menu'></i>
+              </label>
+              <label for="menu-control" class="overplay-bg"></label>
+           </div>
+        </div>
+    </header>
+
+    <!-- section blog slider -->
+    <section class="blog-slider">
+        <div class="grid wide">
+            <div class="owl-carousel owl-theme">
+                    <div class="item blog-slider-effect">
+                        <div class="blog-slider__blog-box blog-slider__blog-box--1" onclick="window.location.href='postdetail.html'">
+                            <img src="./img/mission-2.jpg" alt="post1" class="blog-slider__img">
+                            <div class="blog-slider__infor">
+                                <div class="blog-slider__content blog-slider--style">Post Style</div>
+                                <div class="blog-slider__content blog-slider--title">Post Long Title</div>
+                                <div class="blog-slider__content blog-slider--date">Admin |  <span>Feb 12, 2021</span>  |  <span>30 comments</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item blog-slider-effect">
+                        <div class="blog-slider__blog-box blog-slider__blog-box--1" onclick="window.location.href='postdetail.html'">
+                            <img src="./img/post4.jpg" alt="post1" class="blog-slider__img">
+                            <div class="blog-slider__infor">
+                                <div class="blog-slider__content blog-slider--style">Post Style</div>
+                                <div class="blog-slider__content blog-slider--title">Post Long Title</div>
+                                <div class="blog-slider__content blog-slider--date">Admin |  <span>Feb 12, 2021</span>  |  <span>30 comments</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item blog-slider-effect">
+                        <div class="blog-slider__blog-box blog-slider__blog-box--1" onclick="window.location.href='postdetail.html'">
+                            <img src="./img/post5.jpg" alt="post1" class="blog-slider__img">
+                            <div class="blog-slider__infor">
+                                <div class="blog-slider__content blog-slider--style">Post Style</div>
+                                <div class="blog-slider__content blog-slider--title">Post Long Title</div>
+                                <div class="blog-slider__content blog-slider--date">Admin |  <span>Feb 12, 2021</span>  |  <span>30 comments</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item blog-slider-effect">
+                        <div class="blog-slider__blog-box blog-slider__blog-box--1" onclick="window.location.href='postdetail.html'">
+                            <img src="./img/post5.jpg" alt="post1" class="blog-slider__img">
+                            <div class="blog-slider__infor">
+                                <div class="blog-slider__content blog-slider--style">Post Style</div>
+                                <div class="blog-slider__content blog-slider--title">Post Long Title</div>
+                                <div class="blog-slider__content blog-slider--date">Admin |  <span>Feb 12, 2021</span>  |  <span>30 comments</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item blog-slider-effect">
+                        <div class="blog-slider__blog-box blog-slider__blog-box--1" onclick="window.location.href='postdetail.html'">
+                            <img src="./img/post5.jpg" alt="post1" class="blog-slider__img">
+                            <div class="blog-slider__infor">
+                                <div class="blog-slider__content blog-slider--style">Post Style</div>
+                                <div class="blog-slider__content blog-slider--title">Post Long Title</div>
+                                <div class="blog-slider__content blog-slider--date">Admin |  <span>Feb 12, 2021</span>  |  <span>30 comments</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+       <!-- Page State -->
+   <div class="page-state">
+        <div class="grid wide">
+        <div class="page-state__list">
+            <a href="index.html" class="page-state__link">Home</a>
+            <span>></span>
+            <a href="product.html" class="page-state__link">Products</a>
+        </div>
+        </div>
+    </div>
+
+
+    <!-- Blog Body -->
+    <section class="blog-body">
+        <div class="grid wide">
+            <div class="row">
+                    <div class="blog-body__post col l-8 m-8 c-12">
+                        <div class="row post-box__row">
+                           <div class="post-box col l-6 m-6 c-12">
+                              <div class="post-box__wrapper" style="border: 1px solid #707070;" onclick="window.location.href='postdetail.html'">
+                                 <img src="./img/mission-4.jpg" alt="" class="post-box__img">
+                                 <div class="post-box__infor">
+                                    <div class="post-box__brand">Nike</div>
+                                    <div class="post-box__title">Nike and Dancer</div>
+                                    <div class="post-box__date">Admin | <span>May 31, 2021</span> | <span>12 comments</span></div>
+                                    <span class="post-box__line"></span>
+                                    <p class="post-box__short-content">
+                                       Quam amet nullam amet a eget cursus vivamus elit.
+                                       Amet, orci quis neque id fusce. Pellentesque
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="post-box col l-6 m-6 c-12">
+                              <div class="post-box__wrapper" style="border: 1px solid #707070;" onclick="window.location.href='postdetail.html'">
+                                 <img src="./img/mission-1.jpg" alt="" class="post-box__img">
+                                 <div class="post-box__infor">
+                                    <div class="post-box__brand">Nike</div>
+                                    <div class="post-box__title">What you Got ?</div>
+                                    <div class="post-box__date">Admin | <span>May 31, 2021</span> | <span>12 comments</span></div>
+                                    <span class="post-box__line"></span>
+                                    <p class="post-box__short-content">
+                                       Quam amet nullam amet a eget cursus vivamus elit.
+                                       Amet, orci quis neque id fusce. Pellentesque
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="row post-box__row">
+                           <div class="post-box col l-6 m-6 c-12">
+                              <div class="post-box__wrapper" style="border: 1px solid #707070;" onclick="window.location.href='postdetail.html'">
+                                 <img src="./img/adidas-brand.jpg" alt="" class="post-box__img">
+                                 <div class="post-box__infor">
+                                    <div class="post-box__brand">Adidas</div>
+                                    <div class="post-box__title">Newest 2022 Colllection</div>
+                                    <div class="post-box__date">Admin | <span>May 31, 2021</span> | <span>12 comments</span></div>
+                                    <span class="post-box__line"></span>
+                                    <p class="post-box__short-content">
+                                       Quam amet nullam amet a eget cursus vivamus elit.
+                                       Amet, orci quis neque id fusce. Pellentesque
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="post-box col l-6 m-6 c-12">
+                              <div class="post-box__wrapper" style="border: 1px solid #707070;" onclick="window.location.href='postdetail.html'">
+                                 <img src="./img/nike-just-do-it.jpg" alt="" class="post-box__img">
+                                 <div class="post-box__infor">
+                                    <div class="post-box__brand">Nike</div>
+                                    <div class="post-box__title">Just Do It</div>
+                                    <div class="post-box__date">Admin | <span>May 31, 2021</span> | <span>12 comments</span></div>
+                                    <span class="post-box__line"></span>
+                                    <p class="post-box__short-content">
+                                       Quam amet nullam amet a eget cursus vivamus elit.
+                                       Amet, orci quis neque id fusce. Pellentesque
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+                        <!-- Pagination -->
+                        <div class="pagination">
+                     <ul class="pagination__list">
+                        <li class="pagination-btn btn-prev pagination__item"><span><i
+                                 class='bx bx-chevron-left'></i>Prev</span>
+                        </li>
+                        <li class="pagination__item pagination__item--numb paginantion-active"><span>1</span></li>
+                        <li class="pagination__item pagination__item--numb"><span>2</span></li>
+                        <li class="pagination__item pagination__item--dots"><span>...</span></li>
+                        <li class="pagination__item pagination__item--numb"><span>4</span></li>
+                        <li class="pagination__item pagination__item--numb"><span>5</span></li>
+                        <li class="pagination__item pagination__item--dots"><span>...</span></li>
+                        <li class="pagination__item pagination__item--numb"><span>7</span></li>
+                        <li class="pagination-btn btn-next pagination__item"><span>Next<i
+                                 class='bx bx-chevron-right'></i></span>
+                        </li>
+                     </ul>
+                        </div>
+                    </div>
+                    <div class="blog-body__search col l-4 m-4 c-0">
+                        <div class="blog-search">
+                           <input type="text" class="blog-input-search" placeholder="Type to Search...">
+                        </div>
+
+                        <div class="newest-post">
+                           <h2 class="newest-post__title">Newest Post</h2>
+
+                           <div class="newest-post__post newest-post__post1">
+                              <a href="">
+                                 <div class="post__title">In quis neque urna blandit bibendum pretium. </div>
+                                 <div class="post__date">Jan 1, 2022</div>
+                              </a>
+                           </div>
+                           <div class="newest-post__post newest-post__post1">
+                              <a href="">
+                                 <div class="post__title">In quis neque urna blandit bibendum pretium. </div>
+                                 <div class="post__date">Jan 1, 2022</div>
+                              </a>
+                           </div>
+                           <div class="newest-post__post newest-post__post1">
+                              <a href="">
+                                 <div class="post__title">In quis neque urna blandit bibendum pretium. </div>
+                                 <div class="post__date">Jan 1, 2022</div>
+                              </a>
+                           </div>
+                       </div>
+
+                       <div class="categories-blog">
+                           <h2 class="newest-post__title">Categories</h2>
+                        
+                           <ol class="categories-list">
+                              <li class="categories-list__item">
+                                 <a href="#" class="categories-list__link">New Products</a>
+                              </li>
+                              <li class="categories-list__item">
+                                 <a href="#" class="categories-list__link">Summer Collections</a>
+                              </li>
+                              <li class="categories-list__item">
+                                 <a href="#" class="categories-list__link">Nike Best Shoes</a>
+                              </li>
+                           </ol>
+                       </div>
+
+                       <div class="tags-blog">
+                        <h2 class="newest-post__title">Tags</h2>
+
+                        <div class="tags-list">
+                           <div class="row">
+                              <div class=" col l-6 m-6 c-0">
+                                 <div class="tags-box"><a href="#">Nike</a></div>
+                              </div>
+                              <div class=" col l-6 m-6 c-0">
+                                 <div class="tags-box"><a href="#">Nike</a></div>
+                              </div>
+                           </div>
+                           <div class="row">
+                              <div class=" col l-6 m-6 c-0">
+                                 <div class="tags-box"><a href="#">Nike</a></div>
+                              </div>
+                              <div class=" col l-6 m-6 c-0">
+                                 <div class="tags-box"><a href="#">Nike</a></div>
+                              </div>
+                           </div>
+                        </div>
+                       </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+<!-- footer section -->
+<footer>
+   <div class="grid wide">
+      <div class="footer-wrapper">
+         <!-- First Section -->
+         <div class="footer__about footer-section">
+            <h2 class="footer__title">About us</h2>
+            <div class="about__logo">
+               <img src="./img/Black-logo.png" alt="Logo Zeus">
+            </div>
+
+            <!-- <ul class="about-social">
+               <li class="about-social__item"><a href="" class="about-social__link"><i
+                        class='bx bxl-facebook'></i></a></li>
+               <li class="about-social__item"><a href="" class="about-social__link"><i
+                        class='bx bxl-instagram'></i></a></li>
+               <li class="about-social__item"><a href="" class="about-social__link"><i
+                        class='bx bxl-twitter'></i></a></li>
+               <li class="about-social__item"><a href="" class="about-social__link"><i class='bx bxs-phone'></i></a>
+               </li>
+            </ul> -->
+            <div class="about__desc">
+               Fashion is more than price, style is more than fame, and acceptance is more than popularity. #zeus is
+               wear individuality meets commonality.
+            </div>
+
+         </div>
+
+         <!-- Second Section -->
+         <div class="footer__quicklinks footer-section">
+            <h2 class="footer__title">Quick Links</h2>
+
+            <ul class="quicklinks__list">
+               <li class="footer__item"><a href="#" class="footer__link">About</a></li>
+               <li class="footer__item"><a href="#" class="footer__link">FAQ</a></li>
+               <li class="footer__item"><a href="#" class="footer__link">Privacy Police</a></li>
+               <li class="footer__item"><a href="#" class="footer__link">Payment</a></li>
+               <li class="footer__item"><a href="#" class="footer__link">Help</a></li>
+               <li class="footer__item"><a href="#" class="footer__link">Contact</a></li>
+            </ul>
+         </div>
+
+         <!-- Shop Section -->
+         <div class="footer__shop footer-section">
+            <h2 class="footer__title">Shop</h2>
+
+            <ul class="shop__list">
+               <li class="footer__item"><a href="#" class="footer__link">Nike</a></li>
+               <li class="footer__item"><a href="#" class="footer__link">Adidas</a></li>
+               <li class="footer__item"><a href="#" class="footer__link">Zara</a></li>
+            </ul>
+         </div>
+         <!-- Contact Section -->
+         <div class="footer__contact footer-section">
+            <h2 class="footer__title">Contact Us</h2>
+
+            <ul class="contact__list">
+               <li class="footer__item">
+                  <span><i class='bx bxs-map'></i></span>
+                  <span href="#" class="footer__link">1 Ly Tu Trong, Can Tho city, Vietnam</span>
+               </li>
+               <li class="footer__item">
+                  <span><i class='bx bxs-phone'></i></span>
+                  <p>
+                     <a href="tel:+0932898078" class="footer__link">0932898078</a><br>
+                     <br>
+                     <a href="tel:+0567296579" class="footer__link">0567296579</a>
+                  </p>
+               </li>
+               <li class="footer__item">
+                  <span><i class='bx bxl-gmail'></i></span>
+                  <a href="mailto:phanquanglam908@gmail.com" class="footer__link">phanquanglam908@gmail.com</a>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </div>
+</footer>
+<div class="copyright">
+   <p>Copyright &copy; Zeus - Sport Men's Clothes</p>
+</div>
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="./js/script.js"></script>
+   <script>
+       $('.owl-carousel').owlCarousel({
+        loop: false,
+        margin: 10,
+        nav: false,
+        responsive: {
+            0: {
+                items: 2
+            },
+            600: {
+                items: 3
+            },
+            1000: {
+                items: 3
+            }
+        }
+    })
+   </script>
+</body>
+</html>

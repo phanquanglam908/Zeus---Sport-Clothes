@@ -226,3 +226,6 @@ top: 2rem;
    cursor: pointer;
 }
 
+.field-btn .check-out-btn{
+   background: var(--red);
+}
