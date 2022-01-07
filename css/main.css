@@ -407,11 +407,12 @@ header {
 
 .banner-news__desc {
    color: var(--white);
-   font-size: 1.8rem;
+   font-size: 1.6rem;
    width: 90%;
-   font-weight: 300;
+   font-weight: 400;
    margin: 2rem 0;
    line-height: 2.3rem;
+
 }
 
 .banner-news__btn {
@@ -442,6 +443,10 @@ header {
    max-width: 960px;
    margin-right: auto;
    margin-left: auto;
+}
+
+.blog__subtitle{
+   line-height: 2.5rem;
 }
 
 .blog-box--post1 img {
